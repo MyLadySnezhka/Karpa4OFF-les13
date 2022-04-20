@@ -5,28 +5,63 @@
     min-height: 1200px;
 }
 
+body {
+    font-family: Roboto, Arial, sans-serif;
+}
+
 .header {
     display: flex;
     height: 72px;
     align-items: center;
+    justify-content: space-around;
 }
 
 .navigation {
     display: flex;
+    justify-content: space-around;
 }
 
 .hero {
     display: flex;
     height: 513px;
-    background-color: #3877d1;
+    background: linear-gradient(0deg, #296DCE, #296DCE);
+    color: #fff;
+    padding: 10px 250px 0 250px;
 }
 
 .hero img {
-    position: absolute;
     /*width: 339px;*/
     height: 479px;
-    left: 940px;
-    top: 104px;
+}
+
+.hero-title {
+    width: 622px;
+    font-size: 38px;
+    margin-top: 66px;
+}
+
+.hero-name {
+    width: 318px;
+    font-size: 24px;
+    color: #FF8A00;
+}
+
+.hero-button {
+    display: flex;
+    width: 209px;
+    height: 44px;
+    margin-top: 29px;
+    border: 1px solid #fff;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    transition: all 0.5s linear;
+}
+
+.hero-button:hover {
+    font-size: 16px;
+    background-color: #fff;
+    color: #296DCE;
 }
 
 .menu {
@@ -37,20 +72,83 @@
     display: flex;
     height: 99px;
     background: #FAFAFA;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.drop-down-menu {
+    display: flex;
+    align-items: center;
+    color: #F78000;
+    font-size: 14px;
+    border: 1px solid orange;
+    width: 242px;
+    height: 44px;
+    padding: 0 30px 0 15px; /* проверить, тут не совсем так */
+    
 }
 
 .main-container {
+    
     height: 600px; /* потом удалить */
 }
 
-.num-section {
-    display: flex;
-    box-sizing: border-box;
-    width: 1110px;
-    height: 203px;
-    margin: 10px auto;
-    border: 1px solid black;
+/*
+@font-face {
+    font-family: "ProximaNova";
+    src: url("../fonts/ProximaNova/ProximaNova-Regular.eot");
+    src: url("../fonts/ProximaNova/ProximaNova.eot?#iefix")format("embedded-opentype"),
+        url("../fonts/ProximaNova/ProximaNova.woff") format("woff"),
+        url("../fonts/ProximaNova/ProximaNova.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
 }
+*/
+
+.lesson-section {
+    display: flex;
+    height: 203px;
+    width: 1110px;
+    margin: 19px auto;
+    box-sizing: border-box;
+    border: 1px solid #F3F3F3;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.03);
+    border-radius: 3px;
+    /* font-family: 'Proxima Nova'; */
+}
+
+.lesson-section-num {
+    width: 148px;
+    font-size: 64px;
+    color: #E1E1E1;
+    line-height: 78px;
+    text-align: center;
+}
+
+.lesson-section-main {
+    width: 800px;
+}
+
+.lesson-section-progress {
+
+}
+
+.lesson-section-progress-full {
+    width: 15px;
+    height: 121px;
+    border: 1px solid #E6E6E6;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.lesson-section-progress-bar {
+    width: 9px;
+    height: 87px;
+    background: linear-gradient(90deg, #0099DD 0%, #178EC2 100%);
+    border-radius: 1px;
+}
+
+
 
 
 .footer {
