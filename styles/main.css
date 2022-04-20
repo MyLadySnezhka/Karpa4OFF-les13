@@ -156,16 +156,13 @@ body {
     background-color: #0099DD;
     height: 350px;
     color: white;
-    padding: 10px 250px 0;
+    padding: 33px auto 45px 264px;
+    justify-content: center;
 }
 
 .footer div {
-    margin: 0 20px 0 0;
+    margin: 0 130px 0 0;
 }
-
-/* .footer li {
-    list-style: none;
-} */
 
 .end-line {
     background-color: black;
