@@ -3,6 +3,7 @@
     margin: 0 auto;
     border: 1px solid black; /* потом удалить */
     min-height: 1200px;
+    box-sizing: border-box;
 }
 
 body {
@@ -13,20 +14,31 @@ body {
     display: flex;
     height: 72px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+.header-logo {
+    width: 50%;
 }
 
 .navigation {
+    border: 3px solid violet; /* потом удалить */
     display: flex;
-    justify-content: space-around;
+    justify-content: center;   
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #222B3A;
+    width: 50%;
 }
 
 .hero {
     display: flex;
-    height: 513px;
-    background: linear-gradient(0deg, #296DCE, #296DCE);
+    height: 511px;
+    background: #296dce;
     color: #fff;
-    padding: 10px 250px 0 250px;
+    padding: 0 250px;
+    box-sizing: border-box;
 }
 
 .hero img {
@@ -35,9 +47,12 @@ body {
 }
 
 .hero-title {
+    display: flex;
+    align-items: center;
     width: 622px;
     font-size: 38px;
-    margin-top: 66px;
+    line-height: 53px;
+    margin-top: 60px;
 }
 
 .hero-name {
@@ -89,8 +104,7 @@ body {
 }
 
 .main-container {
-    
-    height: 600px; /* потом удалить */
+    margin: 26px auto;
 }
 
 /*
@@ -115,6 +129,7 @@ body {
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.03);
     border-radius: 3px;
     /* font-family: 'Proxima Nova'; */
+    padding-top: 25px;
 }
 
 .lesson-section-num {
@@ -122,7 +137,7 @@ body {
     font-size: 64px;
     color: #E1E1E1;
     line-height: 78px;
-    text-align: center;
+    text-align: center;    
 }
 
 .lesson-section-main {
@@ -130,7 +145,7 @@ body {
 }
 
 .lesson-section-progress {
-
+    padding-right: 42px;
 }
 
 .lesson-section-progress-full {
@@ -138,7 +153,13 @@ body {
     height: 121px;
     border: 1px solid #E6E6E6;
     box-sizing: border-box;
+    background: #F3F3F3;
     border-radius: 3px;
+    display: flex;
+    align-items: flex-end;
+    font-size: 14px;
+    line-height: 17px;
+    
 }
 
 .lesson-section-progress-bar {
@@ -146,9 +167,35 @@ body {
     height: 87px;
     background: linear-gradient(90deg, #0099DD 0%, #178EC2 100%);
     border-radius: 1px;
+    margin: 0 auto;
+    
 }
 
+.title-text-style {
+    font-size: 24px;
+    color: #1092CB;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    line-height: 29px;
+}
 
+.age-text-style {
+    font-size: 16px;
+    line-height: 19px;
+    color: #979FAD;
+}
+
+.lesson-text-style {
+    font-size: 16px;
+    line-height: 27px;
+    color: #696969;
+}
+
+.lesson-date-style {
+    font-size: 16px;
+    line-height: 27px;
+    color: #696969;
+}
 
 
 .footer {
