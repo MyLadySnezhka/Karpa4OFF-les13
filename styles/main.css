@@ -1,13 +1,14 @@
 .body-container {
     width: 1600px;
     margin: 0 auto;
-    border: 1px solid black; /* потом удалить */
     min-height: 1200px;
     box-sizing: border-box;
 }
 
 body {
-    font-family: Roboto, Arial, sans-serif;
+    /* font-family: Roboto, Arial, sans-serif; */
+    font-family: 'Open Sans',
+    sans-serif;
 }
 
 .header {
@@ -50,15 +51,18 @@ body {
     display: flex;
     align-items: center;
     width: 622px;
+    height: 184px;
     font-size: 38px;
     line-height: 53px;
-    margin-top: 60px;
+    margin-top: 66px;
+    font-weight: bold;
 }
 
 .hero-name {
     width: 318px;
     font-size: 24px;
     color: #FF8A00;
+    font-weight: bold;
 }
 
 .hero-button {
@@ -177,24 +181,30 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.02em;
     line-height: 29px;
+    font-weight: bold;
 }
 
 .age-text-style {
     font-size: 16px;
     line-height: 19px;
     color: #979FAD;
+    margin-top: 5px;
 }
 
 .lesson-text-style {
+    width: 799px;
+    height: 71px;
     font-size: 16px;
     line-height: 27px;
     color: #696969;
 }
 
 .lesson-date-style {
+    height: 28px;
     font-size: 16px;
     line-height: 27px;
     color: #696969;
+    font-weight: bold;
 }
 
 
